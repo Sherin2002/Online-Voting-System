@@ -1,0 +1,268 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins', sans-serif;
+    
+}
+
+.logo {
+    width:120px;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+
+.container{
+    width:100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    padding:0 8%;
+    position:relative;
+}
+
+
+nav{
+    display:flex;
+    width:100%;
+    align-items: center;
+    flex-wrap:wrap;
+    padding: 5px 0;
+    overflow-x:hidden;
+    flex-flow:row nowrap;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 5px;
+    margin-top: -80px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color:snow;
+    text-decoration: none;
+    position: relative;
+
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height:3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+body
+{
+    background: url(../images/BG.png);
+    background-size: 250%;
+    background-repeat: no-repeat;
+}
+
+
+.box{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+.box h2
+{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.box .inputBox
+{
+    position: relative;
+}
+.box .inputBox input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom:  1px solid #fff; 
+    outline: none;
+    background: transparent;
+      
+}
+.box .inputBox label
+{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size:  16px;
+    color: #fff;
+    letter-spacing: 1px;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+.box .inputBox input:focus ~ label
+
+{
+    top: -20px;
+    left: 0;
+    color: #03a9f4;
+    font-size:  12px;
+    
+}
+.forgot{
+    display: block;
+    text-align:right;
+    text-decoration: none;
+    color: red;
+    font-size: 0.9rem;
+    transition: .3s;
+    
+}
+
+.forgot:hover{
+    color: green;
+}
+.register{
+    display: block;
+    text-align:right;
+    text-decoration: none;
+    color: red;
+    font-size: 0.9rem;
+    transition: .3s;
+    
+}
+
+.register:hover{
+    color: green;
+}
+
+
+.box input[type="submit"]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.box input[type="submit"]:hover
+{
+    background: orange;
+    color: #000;
+}
+
+.btn1{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right,#32be8f,#38d39f,#32be8f);
+    color: #fff;
+    text-align: uppercase;
+    font-family: 'poppins',sans-serif;
+    background-size: 200%;
+    transition: .5s;
+}
+
+button.social{
+    margin-bottom: 20px;
+    width: 220px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.facebook{
+    background: #32508e;
+}
+.f{
+    color: white;
+}
+.f:hover{
+    color: orange;
+}
+
+.twitter
+{
+    background: #55acee;
+}
+.tw{
+    color: white;
+}
+.tw:hover{
+    color:orange;
+}
+.google
+{
+    background: #dd4b39;
+}
+.google{
+    color: white;
+}
+.google:hover{
+    color: orange;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #222222;
+    padding: 50px;
+    font-size: 80%;
+}
+
+
+.lpara {
+    color: #b9b9b9;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Terms & Conditions</title>
+    <link rel="stylesheet" href="../src/style/judges.css">
+    <script src="https://kit.fontawesome.com/360d0fa490.js" crossorigin="anonymous"></script>
+    <script src="../src/js/script.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <img src="../src/images/mr.png" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="contestant.html">Contestant</a></li>
+                <li><a href="judges.html" id="judge-link">Judges</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="terms&condition.html">Terms & Conditions</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+
+            </ul>
+        </nav>
+        <h1>Judges Voting</h1>
+
+        <div id="voting-form" class="vote">
+            <h2>Vote for the Contestant</h2>
+
+            <form action="vote.php" method="post">
+                <div class="input-group">
+                    <b></b><label for="contestant">Contestant Name: </label></b>
+                    <select id="contestant" name="contestant">
+                        <div class="input-feild"><b>
+                                <option value="1">Contestant 1</option>
+                                <option value="2">Contestant 2</option>
+                                <option value="3">Contestant 3</option>
+                        </div>
+                    </select></b>
+                    <br><br><br>
+                    <label for="score">Score:</label>
+                    <div class="input-feild">
+                        <input type="number" id="score" name="score" min="0" max="10">
+                    </div><br><br><br>
+                    <div class="input-feild">
+                        <input type="submit" value="Submit Vote">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+
+    </div>
+
+
+    <section class="footer">
+        <div class="icon">
+            <a href=""><img src="../src/images/fb.png"></a>
+            <a href=""><img src="../src/images/insta.png"></a>
+            <a href=""><img src="../src/images/utu.png"></a>
+        </div>
+        <p> copyright &copy;All rights reserved</p>
+    </section>
+
+
+</body>
+
+</html>

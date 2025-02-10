@@ -1,0 +1,186 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins', sans-serif;
+}
+
+.container{
+    width:100%;
+    height:20vh;
+    background-size:cover;
+    background-position:center;
+    padding:0 8%;
+    position:relative;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.logo {
+    width:120px;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+
+nav{
+    display:flex;
+    width:100%;
+    align-items: center;
+    flex-wrap:wrap;
+    padding: 5px 0;
+    overflow-x:hidden;
+    flex-flow:row nowrap;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 5px;
+    margin-top: -80px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color:snow;
+    text-decoration: none;
+    position: relative;
+
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height:3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+body
+{
+    background: url(../images/BG.png);
+    background-size: 200%;
+    background-repeat: no-repeat;
+}
+
+
+
+/***********************/
+/* Register Page */
+/***********************/
+
+.register-page {
+    background-image: linear-gradient(rgba(47, 47, 47, 0.44), rgba(0, 0, 0, 0.7)), url(../images/save3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    height: 165vh;
+    padding-bottom: 100%;
+}
+
+.section-register {
+	background-color: rgba(211, 211, 211, 0.32);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#what2 {
+
+    color: #fff;
+    margin-left: 600px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    padding-top: 70px;
+    font-weight: bold;
+    margin-bottom: 120px;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password] {
+    width:33%;
+    background-color: rgba(209, 209, 209, 0.72);
+}
+
+input[type=textarea] {
+    background-color: rgba(209, 209, 209, 0.72);
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password],
+select,
+textarea {
+   
+    border: 1px solid #9d9d9d;
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 100px;
+    width: 350px;
+    background-color: rgba(209, 209, 209, 0.72);
+}
+
+
+
+#mybtn {
+    margin-left: 10px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 200px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #e67e22;
+    margin-bottom: 10px;
+}
+
+
+
+#mybtn:hover {
+    background-color: #cc6b15;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #222222;
+    padding: 50px;
+    font-size: 80%;
+}
+
+
+.lpara {
+    color: #b9b9b9;
+    text-align: center;
+    margin-top: 40px;
+}
